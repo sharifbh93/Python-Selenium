@@ -44,5 +44,6 @@ class Test_001_Login:
             assert False
             self.driver.close()
 
+        self.driver.implicitly_wait(3)
         self.lp.clickLogout()
         self.driver.close
